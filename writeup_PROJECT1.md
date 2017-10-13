@@ -23,11 +23,9 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Import pacages and load image
 
-I import the respective packages and load a test image. Matplotlib read iage as RGB and cv2 read the iage as GBR. 
-
-![alt text][image1]
+I import the respective packages and load a test image. Matplotlib read image as RGB and cv2 read the iage as GBR. 
 
 
 ### 2. Convert image to gray and remove the noises
