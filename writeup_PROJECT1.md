@@ -201,4 +201,14 @@ white_clip = clip1.fl_image(process_image) #NOTE: this function expects color im
 white_clip.write_videofile(white_output, audio=False)
 ```
 
+### 9. Identify potential shortcomings
 
+Shortcoming:
+In the challenge.mp4, it was not possible to apply current pipelie, since it applies liner equation and do not works in curve lines. I tried some codes, but did not work.
+Current pipe line has a simple image treatment and limited parameters, and it can fail in other condition of images (Rain, Sands, Fog, etc). The pipeline must adapt for all kind of situation.
+
+
+### 10. Improvements for Pipeline
+- In paralell with next classes I will try improve pipeline to works in challenge movies (Curves condition) and try understand how to adapt the pipeline with outher condition of images (Rain, sands, fog, etc).
+
+- In current movie (Linear lines), some frames is not perfect, with abnormal movement of lines, I need improve this case as well.
