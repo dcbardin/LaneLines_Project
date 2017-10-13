@@ -185,5 +185,20 @@ mpimg.imsave("Test_images_output/solidWhiteCurve_lines_edges.png", gray)
 ![alt text][image5]
 
 
+### 8. Apply lines on the Video
+
+In this case, it was necessary apply the Pipeline inside a Function Process_image()
+
+```
+# Import everything needed to edit/save/watch video clips
+from moviepy.editor import VideoFileClip
+from IPython.display import HTML
+
+
+white_output = 'test_videos_output/solidWhiteRight.mp4'
+clip1 = VideoFileClip("test_videos/solidWhiteRight.mp4").subclip(0,5)
+white_clip = clip1.fl_image(process_image) #NOTE: this function expects color images!!
+white_clip.write_videofile(white_output, audio=False)
+```
 
 
