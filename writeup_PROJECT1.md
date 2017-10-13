@@ -179,7 +179,7 @@ lines_edges = cv2.addWeighted(image, 1, line_image, 1, 0)
 plt.figure()
 plt.imshow(lines_edges)
 mpimg.imsave("Test_images_output/solidWhiteCurve_lines_edges.png", gray)
-
+```
 
 
 ![alt text][image5]
